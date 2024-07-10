@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System;
+using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
 
 namespace AQapi.Models;
 
@@ -59,7 +61,7 @@ public partial class MyDBContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source=103.98.160.17;Initial Catalog=Aqtech;User ID=dev;Password=dev@edusoft;Connect Timeout=1800;TrustServerCertificate=True");
+        => optionsBuilder.UseSqlServer("Data Source=103.98.160.17;Initial Catalog=Aqtechdev;User ID=dev;Password=dev@edusoft;Connect Timeout=1800;TrustServerCertificate=True");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -264,7 +266,9 @@ public partial class MyDBContext : DbContext
             entity.Property(e => e.TenMenuTa).HasMaxLength(2000);
             entity.Property(e => e.TieuDe).HasMaxLength(2000);
 
-
+            entity.HasOne(d => d.IdChaNavigation).WithMany(p => p.InverseIdChaNavigation)
+                .HasForeignKey(d => d.IdCha)
+                .HasConstraintName("FK__Menu__id_cha__02084FDA");
         });
 
         modelBuilder.Entity<SanPham>(entity =>

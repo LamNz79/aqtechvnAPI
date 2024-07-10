@@ -1,4 +1,7 @@
-﻿namespace AQapi.Models;
+﻿using System;
+using System.Collections.Generic;
+
+namespace AQapi.Models;
 
 public partial class Menu
 {
@@ -20,5 +23,7 @@ public partial class Menu
 
     public bool? IsAdmin { get; set; }
 
+    public virtual Menu? IdChaNavigation { get; set; }
 
+    public virtual ICollection<Menu> InverseIdChaNavigation { get; set; } = new List<Menu>();
 }
