@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\plam8\\work\\Team reasearch\\AQapi\\AQapi\\AQapi\\AQapi.csproj": {}
+    "C:\\Users\\plam8\\work\\Team reasearch\\AQapi\\AQapiDev\\AQapi\\AQapi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\plam8\\work\\Team reasearch\\AQapi\\AQapi\\AQapi\\AQapi.csproj": {
+    "C:\\Users\\plam8\\work\\Team reasearch\\AQapi\\AQapiDev\\AQapi\\AQapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\plam8\\work\\Team reasearch\\AQapi\\AQapi\\AQapi\\AQapi.csproj",
+        "projectUniqueName": "C:\\Users\\plam8\\work\\Team reasearch\\AQapi\\AQapiDev\\AQapi\\AQapi.csproj",
         "projectName": "AQapi",
-        "projectPath": "C:\\Users\\plam8\\work\\Team reasearch\\AQapi\\AQapi\\AQapi\\AQapi.csproj",
+        "projectPath": "C:\\Users\\plam8\\work\\Team reasearch\\AQapi\\AQapiDev\\AQapi\\AQapi.csproj",
         "packagesPath": "C:\\Users\\plam8\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\plam8\\work\\Team reasearch\\AQapi\\AQapi\\AQapi\\obj\\",
+        "outputPath": "C:\\Users\\plam8\\work\\Team reasearch\\AQapi\\AQapiDev\\AQapi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\plam8\\AppData\\Roaming\\NuGet\\NuGet.Config",

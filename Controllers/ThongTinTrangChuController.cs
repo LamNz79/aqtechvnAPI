@@ -1,11 +1,11 @@
-﻿using AQapi.Models;
-using AQapi.Models.CustomModels;
-using AQapi.Services;
+﻿using AQapiDev.Models;
+using AQapiDev.Models.CustomModels;
+using AQapiDev.Services;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace AQapi.Controllers
+namespace AQapiDev.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

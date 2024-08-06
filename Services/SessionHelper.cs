@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace AQapi.Services
+namespace AQapiDev.Services
 {
     public static class SessionHelper
     {

@@ -1,4 +1,4 @@
-﻿namespace AQapi.Models.CustomModels
+﻿namespace AQapiDev.Models.CustomModels
 {
     public class LoginModel
     {

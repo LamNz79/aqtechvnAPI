@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
-namespace AQapi.Models;
+namespace AQapiDev.Models;
 
 public partial class MyDBContext : DbContext
 {
@@ -353,6 +353,8 @@ public partial class MyDBContext : DbContext
             entity.Property(e => e.DiaChi)
                 .HasMaxLength(2000)
                 .HasColumnName("dia_chi");
+            entity.Property(e => e.DiaChi2).HasColumnName("dia_chi_2");
+            entity.Property(e => e.DiaChi2Ta).HasColumnName("dia_chi_2_TA");
             entity.Property(e => e.DiaChiTa)
                 .HasMaxLength(2000)
                 .HasColumnName("dia_chi_ta");

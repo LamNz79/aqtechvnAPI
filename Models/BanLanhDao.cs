@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace AQapi.Models;
+namespace AQapiDev.Models;
 
 public partial class BanLanhDao
 {

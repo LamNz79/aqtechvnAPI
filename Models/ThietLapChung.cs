@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace AQapi.Models;
+namespace AQapiDev.Models;
 
 public partial class ThietLapChung
 {
@@ -36,4 +36,8 @@ public partial class ThietLapChung
     public string? Email { get; set; }
 
     public string? Fax { get; set; }
+
+    public string? DiaChi2 { get; set; }
+
+    public string? DiaChi2Ta { get; set; }
 }

@@ -1,6 +1,6 @@
-﻿using AQapi;
-using AQapi.Models;
-using AQapi.Services;
+﻿using AQapiDev;
+using AQapiDev.Models;
+using AQapiDev.Services;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -41,7 +41,9 @@ namespace AQTechWeb.Controllers
                                  Fax = tl.Fax,
                                  DiaChi = tl.DiaChi,
                                  DiaChiTa = tl.DiaChiTa,
-                                 Email = tl.Email
+                                 Email = tl.Email,
+                                 DiaChi2 = tl.DiaChi2,
+                                 DiaChi2Ta = tl.DiaChi2Ta,
                              }).ToList();
                 resultList = (List<ThietLapChung>)query.Select(item => new ThietLapChung
                 {
@@ -60,7 +62,9 @@ namespace AQTechWeb.Controllers
                     Fax = item.Fax,
                     DiaChi = item.DiaChi,
                     DiaChiTa = item.DiaChiTa,
-                    Email = item.Email
+                    Email = item.Email,
+                    DiaChi2 = item.DiaChi2,
+                    DiaChi2Ta = item.DiaChi2Ta,
                 }).ToList();
                 return resultList;
             }
@@ -92,7 +96,9 @@ namespace AQTechWeb.Controllers
                             Fax = InputData.Fax,
                             DiaChi = InputData.DiaChi,
                             DiaChiTa = InputData.DiaChiTa,
-                            Email = InputData.Email
+                            Email = InputData.Email,
+                            DiaChi2 = InputData.DiaChi2,
+                            DiaChi2Ta = InputData.DiaChi2Ta
 
                         };
                         context.ThietLapChungs.Add(newData);
@@ -140,6 +146,8 @@ namespace AQTechWeb.Controllers
                         existing.DiaChi = InputData.DiaChi;
                         existing.DiaChiTa = InputData.DiaChiTa;
                         existing.Email = InputData.Email;
+                        existing.DiaChi2 = InputData.DiaChi2;
+                        existing.DiaChi2Ta = InputData.DiaChi2Ta;
                         context.ThietLapChungs.Update(existing);
                         context.SaveChanges();
 

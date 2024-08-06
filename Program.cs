@@ -1,4 +1,4 @@
-using AQapi.Services;
+using AQapiDev.Services;
 
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 var builder = WebApplication.CreateBuilder(args);

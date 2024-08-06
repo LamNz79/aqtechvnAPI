@@ -1,5 +1,5 @@
-﻿using AQapi.Models;
-namespace AQapi.Services
+﻿using AQapiDev.Models;
+namespace AQapiDev.Services
 {
     public interface IThongTinTrangChuService
     {

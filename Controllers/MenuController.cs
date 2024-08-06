@@ -1,11 +1,11 @@
-﻿using AQapi.Models;
-using AQapi.Services;
+﻿using AQapiDev.Models;
+using AQapiDev.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Dynamic;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace AQapi.Controllers
+namespace AQapiDev.Controllers
 {
 
     [Route("api/[controller]")]

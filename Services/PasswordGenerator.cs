@@ -3,7 +3,7 @@ using System.Net.Mail;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace AQapi.Services
+namespace AQapiDev.Services
 {
     public class PasswordGenerator
     {

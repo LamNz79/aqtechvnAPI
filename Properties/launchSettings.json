@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "AQapi": {
+    "AQapiDev": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

@@ -1,4 +1,4 @@
-﻿namespace AQapi
+﻿namespace AQapiDev
 {
     public class IdGenerator
     {

@@ -11641,11 +11641,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\plam8\\work\\Team reasearch\\AQapi\\AQapi\\AQapi\\AQapi.csproj",
-      "projectName": "AQapi",
-      "projectPath": "C:\\Users\\plam8\\work\\Team reasearch\\AQapi\\AQapi\\AQapi\\AQapi.csproj",
+      "projectUniqueName": "C:\\Users\\plam8\\work\\Team reasearch\\AQapi\\AQapiDev\\AQapi\\AQapiDev.csproj",
+      "projectName": "AQapiDev",
+      "projectPath": "C:\\Users\\plam8\\work\\Team reasearch\\AQapi\\AQapiDev\\AQapi\\AQapiDev.csproj",
       "packagesPath": "C:\\Users\\plam8\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\plam8\\work\\Team reasearch\\AQapi\\AQapi\\AQapi\\obj\\",
+      "outputPath": "C:\\Users\\plam8\\work\\Team reasearch\\AQapi\\AQapiDev\\AQapi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\plam8\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -11714,6 +11714,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.20, 7.0.20]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[7.0.20, 7.0.20]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[7.0.20, 7.0.20]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[7.0.20, 7.0.20]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -11722,7 +11740,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
       }
     }
   }
