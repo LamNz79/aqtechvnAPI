@@ -24,4 +24,6 @@ public partial class Setting
     public string? NoiDung { get; set; }
 
     public string? NoiDungTa { get; set; }
+
+    public string? HinhAnh { get; set; }
 }

@@ -35,7 +35,8 @@ namespace AQapiDev.Controllers
                                  TomTatTa = tl.TomTatTa,
                                  IsHienThi = tl.IsHienThi,
                                  NoiDung = tl.NoiDung,
-                                 NoiDungTa = tl.NoiDungTa
+                                 NoiDungTa = tl.NoiDungTa,
+                                 HinhAnh = tl.HinhAnh
                              }).OrderBy(f => f.Stt).ToList();
                 resultList = query.Select(item => new Setting
                 {
@@ -48,7 +49,8 @@ namespace AQapiDev.Controllers
                     TomTatTa = item.TomTatTa,
                     IsHienThi = item.IsHienThi,
                     NoiDung = item.NoiDung,
-                    NoiDungTa = item.NoiDungTa
+                    NoiDungTa = item.NoiDungTa,
+                    HinhAnh = item.HinhAnh
                 }).OrderBy(f => f.Stt).ToList();
                 return resultList;
             }
@@ -72,7 +74,8 @@ namespace AQapiDev.Controllers
                                  TomTatTa = tl.TomTatTa,
                                  IsHienThi = tl.IsHienThi,
                                  NoiDung = tl.NoiDung,
-                                 NoiDungTa = tl.NoiDungTa
+                                 NoiDungTa = tl.NoiDungTa,
+                                 HinhAnh = tl.HinhAnh
                              }).OrderBy(f => f.Stt).ToList();
                 resultList = query.Select(item => new Setting
                 {
@@ -85,7 +88,8 @@ namespace AQapiDev.Controllers
                     TomTatTa = item.TomTatTa,
                     IsHienThi = item.IsHienThi,
                     NoiDung = item.NoiDung,
-                    NoiDungTa = item.NoiDungTa
+                    NoiDungTa = item.NoiDungTa,
+                    HinhAnh = item.HinhAnh
                 }).OrderBy(f => f.Stt).ToList();
                 return resultList;
             }
@@ -112,7 +116,8 @@ namespace AQapiDev.Controllers
                             TomTatTa = inputData.TomTatTa,
                             IsHienThi = inputData.IsHienThi,
                             NoiDung = inputData.NoiDung,
-                            NoiDungTa = inputData.NoiDungTa
+                            NoiDungTa = inputData.NoiDungTa,
+                            HinhAnh = inputData.HinhAnh
                         };
                         context.Settings.Add(newData);
                         context.SaveChanges();
@@ -154,6 +159,7 @@ namespace AQapiDev.Controllers
                         existing.IsHienThi = inputData.IsHienThi;
                         existing.NoiDung = inputData.NoiDung;
                         existing.NoiDungTa = inputData.NoiDungTa;
+                        existing.HinhAnh = inputData.HinhAnh;
                         context.Settings.Update(existing);
                         context.SaveChanges();
 

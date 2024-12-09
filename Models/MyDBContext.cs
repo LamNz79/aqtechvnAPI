@@ -299,6 +299,7 @@ public partial class MyDBContext : DbContext
             entity.ToTable("setting");
 
             entity.Property(e => e.Id).ValueGeneratedNever();
+            entity.Property(e => e.HinhAnh).HasColumnName("hinh_anh");
             entity.Property(e => e.IsHienThi).HasColumnName("isHienThi");
             entity.Property(e => e.KyHieu).HasMaxLength(2000);
             entity.Property(e => e.NoiDung).HasColumnName("noi_dung");
@@ -355,6 +356,8 @@ public partial class MyDBContext : DbContext
                 .HasColumnName("dia_chi");
             entity.Property(e => e.DiaChi2).HasColumnName("dia_chi_2");
             entity.Property(e => e.DiaChi2Ta).HasColumnName("dia_chi_2_TA");
+            entity.Property(e => e.DiaChi3).HasColumnName("dia_chi_3");
+            entity.Property(e => e.DiaChi3Ta).HasColumnName("dia_chi_3_TA");
             entity.Property(e => e.DiaChiTa)
                 .HasMaxLength(2000)
                 .HasColumnName("dia_chi_ta");

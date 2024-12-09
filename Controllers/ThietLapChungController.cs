@@ -18,11 +18,12 @@ namespace AQTechWeb.Controllers
         }
         // GET: api/<ThietLapChungController>
         [HttpGet]
-        public List<ThietLapChung> Get()
+        public object Get()
         {
-            List<ThietLapChung> resultList = new List<ThietLapChung>();
+            //List<ThietLapChung> resultList = new List<ThietLapChung>();
             using (var context = new MyDBContext())
             {
+                return context.ThietLapChungs.ToList();
                 var query = (from tl in context.ThietLapChungs
                              select new ThietLapChung
                              {
@@ -44,29 +45,33 @@ namespace AQTechWeb.Controllers
                                  Email = tl.Email,
                                  DiaChi2 = tl.DiaChi2,
                                  DiaChi2Ta = tl.DiaChi2Ta,
+                                 DiaChi3 = tl.DiaChi3,
+                                 DiaChi3Ta = tl.DiaChi3Ta,
                              }).ToList();
-                resultList = (List<ThietLapChung>)query.Select(item => new ThietLapChung
-                {
-                    Id = item.Id,
-                    Stt = item.Stt,
-                    TenWebsiteTa = item.TenWebsiteTa,
-                    Title = item.Title,
-                    TitleTa = item.TitleTa,
-                    Favicon = item.Favicon,
-                    TenWebsite = item.TenWebsite,
-                    HinhAnhLogo = item.HinhAnhLogo,
-                    NgonNgu = item.NgonNgu,
-                    LinkFacebook = item.LinkFacebook,
-                    LinkYoutube = item.LinkYoutube,
-                    SoDienThoai = item.SoDienThoai,
-                    Fax = item.Fax,
-                    DiaChi = item.DiaChi,
-                    DiaChiTa = item.DiaChiTa,
-                    Email = item.Email,
-                    DiaChi2 = item.DiaChi2,
-                    DiaChi2Ta = item.DiaChi2Ta,
-                }).ToList();
-                return resultList;
+                //resultList = (List<ThietLapChung>)query.Select(item => new ThietLapChung
+                //{
+                //    Id = item.Id,
+                //    Stt = item.Stt,
+                //    TenWebsiteTa = item.TenWebsiteTa,
+                //    Title = item.Title,
+                //    TitleTa = item.TitleTa,
+                //    Favicon = item.Favicon,
+                //    TenWebsite = item.TenWebsite,
+                //    HinhAnhLogo = item.HinhAnhLogo,
+                //    NgonNgu = item.NgonNgu,
+                //    LinkFacebook = item.LinkFacebook,
+                //    LinkYoutube = item.LinkYoutube,
+                //    SoDienThoai = item.SoDienThoai,
+                //    Fax = item.Fax,
+                //    DiaChi = item.DiaChi,
+                //    DiaChiTa = item.DiaChiTa,
+                //    Email = item.Email,
+                //    DiaChi2 = item.DiaChi2,
+                //    DiaChi2Ta = item.DiaChi2Ta,
+                //    DiaChi3 = item.DiaChi3,
+                //    DiaChi3Ta = item.DiaChi3Ta,
+                //}).ToList();
+                ////return resultList;
             }
         }
 
@@ -98,7 +103,9 @@ namespace AQTechWeb.Controllers
                             DiaChiTa = InputData.DiaChiTa,
                             Email = InputData.Email,
                             DiaChi2 = InputData.DiaChi2,
-                            DiaChi2Ta = InputData.DiaChi2Ta
+                            DiaChi2Ta = InputData.DiaChi2Ta,
+                            DiaChi3 = InputData.DiaChi3,
+                            DiaChi3Ta = InputData.DiaChi3Ta,
 
                         };
                         context.ThietLapChungs.Add(newData);
@@ -148,6 +155,8 @@ namespace AQTechWeb.Controllers
                         existing.Email = InputData.Email;
                         existing.DiaChi2 = InputData.DiaChi2;
                         existing.DiaChi2Ta = InputData.DiaChi2Ta;
+                        existing.DiaChi3 = InputData.DiaChi3;
+                        existing.DiaChi3Ta = InputData.DiaChi3Ta;
                         context.ThietLapChungs.Update(existing);
                         context.SaveChanges();
 

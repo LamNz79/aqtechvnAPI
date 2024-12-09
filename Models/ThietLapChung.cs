@@ -37,7 +37,11 @@ public partial class ThietLapChung
 
     public string? Fax { get; set; }
 
+    public string? DiaChi2Ta { get; set; }
+
     public string? DiaChi2 { get; set; }
 
-    public string? DiaChi2Ta { get; set; }
+    public string? DiaChi3 { get; set; }
+
+    public string? DiaChi3Ta { get; set; }
 }
